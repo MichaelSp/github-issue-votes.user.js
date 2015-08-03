@@ -21,7 +21,7 @@ Just comment `+1` or `-1`.
     * ***OPERA***: Follow instructions located on Opera's site: [User JS](http://www.opera.com/docs/userjs/). Continue to STEP 2.
     * &#x20;<del>***SAFARI***: Install [SIMBL](http://www.culater.net/software/SIMBL/SIMBL.php). Install [GreaseKit](http://8-p.info/greasekit/). Continue to STEP 2.</del>
     * ***SAFARI***: Install [NinjaKit](http://d.hatena.ne.jp/os0x/20100612/1276330696). Continue to STEP 2.
-2. Install the "GitHub Issue Votes" user script by clicking here: [github-issue-votes.user.js](https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/github-issue-votes.user.js).  
+2. Install the "GitHub Issue Votes" user script by clicking here: [github-issue-votes.user.js](https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/GitHub_Issue_Votes.user.js).  
 
 ### Screenshots ###
 
