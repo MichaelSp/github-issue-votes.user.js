@@ -29,8 +29,10 @@
     }
 
     addGlobalStyle('\
-    .vote_positive { background-color: #6CC644; color: #FFF; }\
-    .vote_negative { background-color: #BD2C00; color: #FFF; }\
+    .vote_positive .timeline-comment-header, .vote_positive .timeline-comment-header .author { background-color: #6CC644; color: #FFF; }\
+    .vote_negative .timeline-comment-header, .vote_negative .timeline-comment-header .author { background-color: #BD2C00; color: #FFF; }\
+    .vote_positive > .timeline-comment:after { border-right-color: #6CC644; }\
+    .vote_negative > .timeline-comment:after { border-right-color: #BD2C00; }\
     ');
 
     var scanForVotes = function () {
@@ -44,7 +46,7 @@
                 imageVoteUp = elem.find('img[alt=":+1:"], img[alt=":thumbsup:"]');
                 contextVote = /\+1/.test(elem.text());
                 if (contextVote || imageVoteUp.length) {
-                    elem.parents('.timeline-comment-wrapper').find('.timeline-comment-header').addClass('vote_positive').removeClass('vote_negative');
+                    elem.parents('.timeline-comment-wrapper').addClass('vote_positive').removeClass('vote_negative');
                     positive.add(name);
                     negative.delete(name);
                     only_p = elem.find('> p:only-child');
@@ -59,7 +61,7 @@
                     }
                 }
                 else if (/-1/.test(elem.text()) || elem.find('img[alt=":-1:"], img[alt=":thumbsdown:"]').length>0) {
-                    elem.parents('.timeline-comment-wrapper').find('.timeline-comment-header').addClass('vote_negative').removeClass('vote_positive');
+                    elem.parents('.timeline-comment-wrapper').addClass('vote_negative').removeClass('vote_positive');
                     negative.add(name);
                     positive.delete(name);
                 }
