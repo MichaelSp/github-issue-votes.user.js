@@ -25,5 +25,10 @@ Just comment `+1` or `-1`.
 
 ### Screenshots ###
 
-TODO
+#### Before installing the user script: ####
+
+![without](https://cloud.githubusercontent.com/assets/448282/9038450/a08a630c-39f4-11e5-8aa8-56d2bfc2cb22.png)
+
+#### After installing the user script: ####
+![votes](https://cloud.githubusercontent.com/assets/448282/9038455/a3650a50-39f4-11e5-9890-993de988cf9c.png)
   
