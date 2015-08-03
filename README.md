@@ -4,7 +4,7 @@ User Script : GitHub Issue Votes
 ### Description ###
 
 This is a user script that adds a voting feature to Github issues
-and pull requests.
+and pull requests as [suggested here.](https://github.com/isaacs/github/issues/9)
 
 Just comment `+1` or `-1`.
 
