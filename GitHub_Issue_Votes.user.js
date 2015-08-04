@@ -44,7 +44,7 @@
             try {
                 name = elem.parents('.timeline-comment-wrapper').find('>a').attr('href').replace(/^\//, '@');
                 imageVoteUp = elem.find('img[alt=":+1:"], img[alt=":thumbsup:"]');
-                contextVote = /\+1/.test(elem.text());
+                contextVote = /(^|\W)\+1($|\b)/.test(elem.text());
                 if (contextVote || imageVoteUp.length) {
                     elem.parents('.timeline-comment-wrapper').addClass('vote_positive').removeClass('vote_negative');
                     positive.add(name);
@@ -60,7 +60,7 @@
                         comment.find('.comment-content').remove();
                     }
                 }
-                else if (/-1/.test(elem.text()) || elem.find('img[alt=":-1:"], img[alt=":thumbsdown:"]').length>0) {
+                else if (/(^|\W)-1($|\b)/.test(elem.text()) || elem.find('img[alt=":-1:"], img[alt=":thumbsdown:"]').length>0) {
                     elem.parents('.timeline-comment-wrapper').addClass('vote_negative').removeClass('vote_positive');
                     negative.add(name);
                     positive.delete(name);
