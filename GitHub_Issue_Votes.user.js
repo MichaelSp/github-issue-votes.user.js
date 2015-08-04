@@ -29,10 +29,11 @@
     }
 
     addGlobalStyle('\
-    .vote_positive .timeline-comment-header, .vote_positive .timeline-comment-header .author { background-color: #6CC644; color: #FFF; }\
-    .vote_negative .timeline-comment-header, .vote_negative .timeline-comment-header .author { background-color: #BD2C00; color: #FFF; }\
-    .vote_positive > .timeline-comment:after { border-right-color: #6CC644; }\
-    .vote_negative > .timeline-comment:after { border-right-color: #BD2C00; }\
+    .vote_positive.timeline-comment-wrapper > .timeline-comment .timeline-comment-header, .vote_positive.timeline-comment-wrapper > .timeline-comment .timeline-comment-header .author { background-color: #6CC644; color: #FFF; }\
+    .vote_negative.timeline-comment-wrapper > .timeline-comment .timeline-comment-header, .vote_negative.timeline-comment-wrapper > .timeline-comment .timeline-comment-header .author { background-color: #BD2C00; color: #FFF; }\
+    .vote_positive.timeline-comment-wrapper > .timeline-comment:after { border-right-color: #6CC644; }\
+    .vote_negative.timeline-comment-wrapper > .timeline-comment:after { border-right-color: #BD2C00; }\
+    .vote_positive .timeline-comment-action:hover, .vote_negative .timeline-comment-action:hover { color: #FFF; }\
     ');
 
     var scanForVotes = function () {
