@@ -8,9 +8,9 @@
 // @run-at         document-end
 // @grant          none
 // @icon           http://skratchdot.com/favicon.ico
-// @downloadURL    https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/github-issue-vptes.user.js
-// @updateURL      https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/github-issue-votes.user.js
-// @version        1.9
+// @downloadURL    https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/GitHub_Issue_Votes.user.js
+// @updateURL      https://github.com/MichaelSp/github-issue-votes.user.js/raw/master/GitHub_Issue_Votes.user.js
+// @version        1.10
 // ==/UserScript==
 
 /*global jQuery */
