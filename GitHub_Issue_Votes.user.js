@@ -51,10 +51,10 @@
                     positive.add(name);
                     negative.delete(name);
                     only_p = elem.find('> p:only-child');
-                    plainVote = /^\s*(\+1|:\+1:)\s*$/.exec(only_p.text());
+                    plainVote = /^\s*(\+1|:\+1:)\s*$/.exec(only_p.text()) || [];
                     var collapse = plainVote.length>0 || only_p.find('> img:only-child').length>0;
                     if (collapse) {
-                        var hint = plainVote.length > 0 ? plainVote[0] : elem.find('img').html();
+                        var hint = plainVote.length > 0 ? plainVote[0] : elem.find('img').wrap('<div/>').parent().html();
                         var comment = elem.parents('.comment');
                         var header = comment.find('.timeline-comment-header-text');
                         header.html(header.html().replace(/commented/, 'voted (' + hint + ')'));
